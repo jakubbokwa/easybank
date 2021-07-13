@@ -80,6 +80,7 @@ const Wrapper = styled.section`
       img {
         object-fit: cover;
       }
+      overflow: scroll;
     }
   }
 `;
