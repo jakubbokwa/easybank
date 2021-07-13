@@ -57,6 +57,10 @@ const Wrapper = styled.section`
       .icon {
         width: 24px;
         height: 24px;
+        :hover {
+          transform: scale(1.2);
+          cursor: pointer;
+        }
       }
     }
   }
@@ -70,6 +74,10 @@ const Wrapper = styled.section`
     h4 {
       color: white;
       margin: 10px 0;
+      :hover {
+        color: var(--color-primary-2);
+        cursor: pointer;
+      }
     }
   }
   .button-trademark-container {
@@ -112,6 +120,7 @@ const Wrapper = styled.section`
         margin: 0;
       }
       justify-content: center;
+      text-align: center;
     }
   }
 `;

@@ -62,6 +62,13 @@ const NavContainer = styled.nav`
     }
     span {
       color: var(--color-neutral-1);
+      padding-bottom: 3px;
+      :hover {
+        padding-bottom: 0;
+        border-bottom: 3px solid var(--color-primary-2);
+        transition: all 0.1s ease-in-out;
+        cursor: pointer;
+      }
     }
   }
 `;

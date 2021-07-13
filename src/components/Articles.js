@@ -15,7 +15,14 @@ const Articles = () => {
               <div className="card-body">
                 <p className="author">{author}</p>
                 <h4>{title}</h4>
-                <p>{desc}</p>
+                {desc.length <= 120 ? (
+                  <p>{desc}</p>
+                ) : (
+                  <p>
+                    {desc.substring(0, 120)}
+                    <span className="read-more">...read more</span>
+                  </p>
+                )}
               </div>
             </div>
           );
@@ -80,7 +87,17 @@ const Wrapper = styled.section`
       img {
         object-fit: cover;
       }
-      overflow: scroll;
+      h4:hover {
+        color: var(--color-primary-2);
+        cursor: pointer;
+      }
+      .read-more {
+        font-size: 1.3rem;
+        :hover {
+          color: var(--color-primary-2);
+          cursor: pointer;
+        }
+      }
     }
   }
 `;
